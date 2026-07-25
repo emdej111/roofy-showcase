@@ -57,7 +57,7 @@ Roofy is a full-stack rental platform with two distinct user roles, map-based pr
 
 ## Project Structure
 
-\`\`\`
+```
 src/
 ├── components/     # Reusable UI components
 ├── pages/          # Route-level page components
@@ -67,7 +67,7 @@ src/
 
 supabase/
 └── migrations/     # Database schema and migrations
-\`\`\`
+```
 
 ---
 
