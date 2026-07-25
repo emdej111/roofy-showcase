@@ -1,0 +1,1 @@
+REVOKE EXECUTE ON FUNCTION public.is_inquiry_participant(UUID, UUID) FROM PUBLIC, anon, authenticated;

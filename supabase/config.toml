@@ -1,0 +1,14 @@
+project_id = "your-project-id"
+
+[functions.sitemap]
+verify_jwt = false
+
+# Rate-limit funkcije zovu se PRIJE prijave — korisnik nema JWT, mora biti javno.
+[functions.check-login-rate-limit]
+verify_jwt = false
+
+[functions.record-login-attempt]
+verify_jwt = false
+
+# log-security-event ZAHTIJEVA JWT (default verify_jwt = true) jer user_id
+# moramo izvući iz tokena, ne iz body-a (sprječava lažiranje zapisa).

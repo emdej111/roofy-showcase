@@ -1,0 +1,1 @@
+REVOKE EXECUTE ON FUNCTION public.purge_old_login_attempts() FROM PUBLIC, anon, authenticated;
